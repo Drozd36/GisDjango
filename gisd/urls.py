@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+
+import gisd.views
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^', include('gisd.urls'))
+    url(r'^$',gisd.views.home, name='home' ),
 ]
