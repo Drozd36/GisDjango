@@ -6,3 +6,7 @@ from django.shortcuts import render
 def home(request):
     #  return HttpResponse("Hello world")
     return render(request, 'giss/home.html')
+
+
+def about(request):
+    return render(request, 'giss/about.html')

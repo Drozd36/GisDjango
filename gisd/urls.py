@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path
-
+from django.conf.urls.static import static
 import gisd.views
 
 urlpatterns = [
-    url(r'^$',gisd.views.home, name='home' ),
+    url(r'^$',gisd.views.home, name='home'),
+    url(r'^home/$',gisd.views.home, name='home'),
+    url(r'^about/$',gisd.views.about, name='about'),
 ]
