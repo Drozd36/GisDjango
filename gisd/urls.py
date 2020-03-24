@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^$',gisd.views.home, name='home'),
     url(r'^home/$',gisd.views.home, name='home'),
     url(r'^about/$',gisd.views.about, name='about'),
+    url(r'^articles/(?P<article_id>[0-9]+)/$', gisd.views.show_articles, name='article'),
 ]

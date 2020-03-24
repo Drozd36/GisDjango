@@ -1,4 +1,4 @@
-{% comment %}{% load staticfiles %}{% endcomment %}
+{% load static %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -34,7 +34,7 @@ font-size: 3.5rem;
 }
 </style>
 <!-- Custom styles for this template-->
-<link href={% comment %}"{% static 'gis/styles.css' %}"{% endcomment %} rel="stylesheet">
+<link href="{% static 'gis/styles.css' %}" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -70,7 +70,7 @@ font-size: 3.5rem;
 </div>
 </nav>
 
-<main role="main" class="container margin_block" style="margin-top: 80px">
+<main role="main" class="container margin_block">
 {% block content %}{% endblock %}
 
 
