@@ -1,11 +1,11 @@
 {% extends 'giss/base.html' %}
 
 {% block title %}
-    Home
+    Article
 {% endblock %}
 
 
 {% block content %}
     <h3>{{article.title }}</h3>
-    <p>{{article.text}}<p>
+    <p>{{article.text | safe}}<p>
 {% endblock %}
